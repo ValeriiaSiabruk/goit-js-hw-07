@@ -20,7 +20,7 @@ const galleryHTML = galleryItems.map((elem) => {
 
 gallery.insertAdjacentHTML("afterbegin", galleryHTML.join(""));
 
-function modalShoweHandler(event) {
+function modalShowHandler(event) {
   event.preventDefault();
 
   const imgSrc = event.target.dataset.source;
@@ -48,4 +48,4 @@ function modalCloseHandler(event) {
   }
 }
 
-gallery.addEventListener("click", modalShoweHandler);
+gallery.addEventListener("click", modalShowHandler);
